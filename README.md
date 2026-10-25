@@ -3,9 +3,9 @@
 Jednostronicowa, statyczna strona agencji **Milosz Paid Ads** (Google Ads dla gabinetów
 fizjoterapii i rehabilitacji). Czysty HTML + CSS, bez frameworka i bez builda.
 
-- Adres publiczny: **https://<USERNAME>.github.io/<REPO>/** (uzupełniane po wdrożeniu)
+- Adres publiczny: **https://miloszagency.github.io/**
 - Hosting: GitHub Pages (za darmo, HTTPS automatycznie)
-- Repozytorium: https://github.com/<USERNAME>/<REPO>
+- Repozytorium: https://github.com/MiloszAgency/MiloszAgency.github.io (konto GitHub: `MiloszAgency`)
 
 ## Pliki
 
@@ -68,7 +68,7 @@ W panelu DNS domeny dodaj (zostaw TTL domyślny):
 | AAAA | `@` | `2606:50c0:8001::153` |
 | AAAA | `@` | `2606:50c0:8002::153` |
 | AAAA | `@` | `2606:50c0:8003::153` |
-| CNAME | `www` | `<USERNAME>.github.io.` |
+| CNAME | `www` | `miloszagency.github.io.` |
 
 Uwagi:
 - `@` oznacza samą domenę (`miloszpaidads.pl`). W niektórych panelach pole „nazwa" zostawia się puste.
@@ -107,11 +107,11 @@ powinno zwrócić cztery adresy `185.199.*.153`.
 
 Zapobiega to przejęciu domeny przez obce repozytorium:
 **GitHub → Settings (konta) → Pages → Add a domain** → wpisz domenę → dodaj u rejestratora
-rekord `TXT` o nazwie `_github-pages-challenge-<USERNAME>` z podaną wartością → **Verify**.
+rekord `TXT` o nazwie `_github-pages-challenge-MiloszAgency` z podaną wartością → **Verify**.
 
 ### Krok 6. Po podpięciu domeny
 
-- Stary adres `https://<USERNAME>.github.io/<REPO>/` będzie automatycznie przekierowywał na nową domenę.
+- Stary adres `https://miloszagency.github.io/` będzie automatycznie przekierowywał na nową domenę.
 - W Google Ads API Center (i wszędzie, gdzie podałeś adres firmy) zaktualizuj URL na `https://miloszpaidads.pl`.
 - W `index.html` dodaj w `<head>`:
 
